@@ -42,7 +42,7 @@ if st.button('Prediksi'):
     st.subheader('Hasil Prediksi')
     if prediction[0] == 1:
         st.write('**Pasien diprediksi terkena diabetes.**')
-        st.write(f'Kemungkinan: {prediction_proba[0][1]*100:.2f}%')
+        st.write(f'Probabilitas: {prediction_proba[0][1]*100:.2f}%')
     else:
         st.write('**Pasien diprediksi tidak terkena diabetes.**')
-        st.write(f'Kemungkinan: {prediction_proba[0][0]*100:.2f}%')
+        st.write(f'Probabilitas: {prediction_proba[0][0]*100:.2f}%')
